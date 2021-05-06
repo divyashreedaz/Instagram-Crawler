@@ -37,7 +37,7 @@ saveAsGEXF = function(g, filepath="converted_graph.gexf")
                        edgesWeight=E(g)$weight,
                        edgesAtt = edgesAtt,
                        nodesAtt = nodesAtt,
-                       meta=c(list(creator="Gopalakrishna Palem, modified by Jonas Schröder", description="igraph -> gexf converted file", keywords="igraph, gexf, R, rgexf"), graphAtt))
+                       meta=c(list(creator="V.V.Vaishnavi, S.Divyashree", description="igraph -> gexf converted file", keywords="igraph, gexf, R, rgexf"), graphAtt))
   
   sink("gexf-HASHTAG.gexf")
   print(output, filepath, replace=T)
