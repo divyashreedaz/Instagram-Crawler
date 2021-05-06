@@ -7,7 +7,7 @@ library(utf8)
 #---------------------------------------------------------
 #Download JSON File from Instagram for a specific Hashtag
 #---------------------------------------------------------
-hashtag <- "cwc"
+hashtag <- "bike"
 url_start <- str_glue("http://instagram.com/explore/tags/{hashtag}/?__a=1")
 json <- fromJSON(url_start)
 edge_hashtag_to_media <- json$graphql$hashtag$edge_hashtag_to_media
