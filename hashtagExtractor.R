@@ -4,7 +4,7 @@ library(stringr)
 text <- list()
 htemp <- list()
 htags <- data.frame()
-data <- read.csv("cwc.csv")
+data <- read.csv("bike.csv")
 data <- as.matrix(data[-1])
 
 maxrows <- nrow(data)
@@ -20,6 +20,6 @@ for(i in 1:maxrows){
 } 
 
 #Save Hashtags as csv for Excel
-write.csv(htags, "ht_unsort_cwc.csv", fileEncoding = "UTF-8")
+write.csv(htags, "ht_unsort_bike.csv", fileEncoding = "UTF-8")
 df_htags <- as.data.frame(table(unlist(htags)))
-write.csv(df_htags, "ht_sort_cwc.csv", fileEncoding = "UTF-8")
+write.csv(df_htags, "ht_sort_bike.csv", fileEncoding = "UTF-8")
